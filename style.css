@@ -1,0 +1,71 @@
+.parent-container {
+    background-color: beige;
+    border: 2px solid black;
+    width: 75vw;
+    height: 175vh;
+    padding: 5px ;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    /* cause absolute container to postion inside container */
+}
+
+.child {
+    padding: 25px;
+
+}
+
+.static{
+    border: 2px solid red;
+    background-color: red;
+/* top, bottom, left, right, z index properties have no effect */
+
+    top: 2500px;
+}
+
+.relative {
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+
+    /* position: relative; */
+    top: 25px;
+    left: 25px;
+    /* relative by default acts like static, however can use left, right, to take the ele
+    to take the doc out of decfault flow */
+    /* do not use it if you can avoid it. Too manual  */
+
+}
+
+.absolute {
+    border: 2px solid green;
+    background-color: green;
+    /* position: absolute; */
+    /* it takes element out of the flow  */
+
+    top: 0;
+    /* relative to root that NOT static */
+    /* used for absolutely positioning children */
+}
+
+.fixed {
+    border: 2px solid teal;
+    background-color: teal;
+    /* position: fixed; */
+    top: 0;
+    /* it ignores parent  */
+    /* based on entire viewport */
+    /* absolute on parent relative will scroll */
+    /* fixed will not scroll away */
+}
+
+.sticky {
+    border: 2px solid gray;
+    background-color: gray;
+    position: sticky;
+    top: 75px;
+
+    /* acts like a combination of fixed and absolute  */
+    /* stays fixed once scroll occurs */
+    /* its relative by default(doesnt move out of normal flow) */
+
+}
+
