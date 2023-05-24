@@ -2,7 +2,7 @@
     background-color: beige;
     border: 2px solid black;
     width: 75vw;
-    height: 175vh;
+    height: 55vh;
     padding: 5px ;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
@@ -60,7 +60,7 @@
 .sticky {
     border: 2px solid gray;
     background-color: gray;
-    position: sticky;
+    /* position: sticky; */
     top: 75px;
 
     /* acts like a combination of fixed and absolute  */
@@ -69,3 +69,56 @@
 
 }
 
+/* display property */
+/* treatts an element as block or inline */
+/* blocks are created top to botoom */
+/* inline are positioned side by side  */ 
+
+
+.display-container {
+    margin-top: 2em;
+
+}
+
+.block-container {
+    border: 2px solid black;
+    margin-top: 2px;
+
+}
+
+.inline-element {
+    margin: 5px;
+    display: block;
+    /* turns buttons into blocks and aligns them in a column */
+}
+
+.inline-block {
+    border: 2px solid black;
+    margin: 2px;
+
+    /* initially a block */
+    
+    display: inline
+    /* acts like an inline element  */
+    /* display: inline-block; */
+
+    /* allows us to set the width and height of an inline element */
+}
+
+
+.float-container {
+    margin-top: 2em;
+    border: 2px solid blue;
+    height: 20vh;
+
+}
+
+.float-box {
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 2px solid blue;
+
+    float: right;
+}
